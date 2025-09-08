@@ -1,0 +1,24 @@
+\
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <title>mods.js complete test</title>
+</head>
+<body>
+  <h1>Test mods.js (complete)</h1>
+  <p>Відкрий DevTools → Console і Network.</p>
+
+  <!-- Підключаємо через jsDelivr -->
+  <script src="https://cdn.jsdelivr.net/gh/maybeede/mods/mods/1.4/mods.min.js"></script>
+
+  <script>
+    console.log('window.mods:', window.mods);
+    if (window.slider && typeof window.slider.init === 'function') {
+      console.log('slider is available (placeholder or real)');
+    } else {
+      console.error('slider is NOT available');
+    }
+  </script>
+</body>
+</html>
